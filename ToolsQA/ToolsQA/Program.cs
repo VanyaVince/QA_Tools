@@ -10,10 +10,6 @@ namespace ToolsQA
     {
         static void Main(string[] args)
         {
-            IWebDriver driver = new ChromeDriver();
-
-            //NavigationCommands(driver);
-            WebElementCommands(driver);
         }
 
 

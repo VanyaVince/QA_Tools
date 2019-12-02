@@ -16,6 +16,8 @@ namespace NUnitTestProject1.Selenium_Test_Basic
             string login = "sviridovich.vanya";
             string password = "tarakan123";
 
+            
+
             driver.Navigate().GoToUrl("https://disk.yandex.by");
 
             driver.FindElement(By.XPath("//a[@class='button button_login header__login-link']")).Click();
@@ -32,6 +34,8 @@ namespace NUnitTestProject1.Selenium_Test_Basic
 
             string loginValidation = driver.FindElement(By.XPath("//a[@class='user-account user-account_has-accent-letter_yes user2__current-account']/span")).GetAttribute("innerText");
             Assert.AreEqual(login, loginValidation);
+
+            driver.Quit();
 
                 
             //IWebElement button = driver.FindElement(By.XPath("//button[@class='control button2 button2_view_classic button2_size_l button2_theme_action button2_width_max button2_type_submit passp-form-button']"));
